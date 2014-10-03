@@ -1,10 +1,13 @@
 /*
- * USB armory
+ * Copyright (C) 2011 Freescale Semiconductor, Inc.
+ * Jason Liu <r64343@freescale.com>
  *
- * Copyright (C) 2014 Inverse Path S.r.l.
- * Andrej Rosano <andrej@inversepath.com>
+ * Configuration settings for Freescale MX53 low cost board.
  *
- * SPDX-License-Identifier:|____GPL-2.0+
+ * SPDX-License-Identifier:     GPL-2.0+
+ *
+ * Adapted from mx53loco.h by Andrej Rosano <andrej@inversepath.com>
+ * for USB armory (inversepath.com/usbarmory) hardware
  */
 
 #ifndef __CONFIG_H
