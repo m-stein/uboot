@@ -61,12 +61,13 @@
 #define CONFIG_MXC_USB_FLAGS	0
 
 /* I2C Configs */
-#define CONFIG_CMD_FUSE
 #define CONFIG_CMD_I2C
-#define CONFIG_FSL_IIM
 #define CONFIG_SYS_I2C
 #define CONFIG_SYS_I2C_MXC
-#define CONFIG_SYS_SPD_BUS_NUM		1 /* I2C2 */
+
+
+#define CONFIG_FSL_IIM
+#define CONFIG_CMD_FUSE
 
 /* allow to overwrite serial and ethaddr */
 #define CONFIG_ENV_OVERWRITE
@@ -85,10 +86,11 @@
 #define CONFIG_SYS_TEXT_BASE    0x77800000
 
 #define CONFIG_BOOTARGS \
-	"console=ttymxc0,115200 root=/dev/mmcblk0p1 rootwait rw\0"
+	"console=ttymxc0,115200 root=/dev/mmcblk0p1 rootwait rw"
 
 #define CONFIG_BOOTCOMMAND \
-	"ext2load mmc 0:1 0x70800000 /boot/uImage; ext2load mmc 0:1 0x71000000 /boot/usbarmory.dtb; bootm 0x70800000 - 0x71000000\0"
+	"ext2load mmc 0:1 0x70800000 /boot/uImage; ext2load mmc 0:1 0x71000000 /boot/imx53-usbarmory.dtb; bootm 0x70800000 - 0x71000000"
+
 
 /* Miscellaneous configurable options */
 #define CONFIG_SYS_LONGHELP		/* undef to save memory */
