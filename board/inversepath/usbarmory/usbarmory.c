@@ -74,7 +74,7 @@ u32 get_board_rev(void)
 }
 
 #define UART_PAD_CTRL	(PAD_CTL_HYS | PAD_CTL_DSE_HIGH | \
-			 PAD_CTL_PUS_100K_UP | PAD_CTL_ODE)
+			 PAD_CTL_PUS_100K_UP)
 
 static void setup_iomux_uart(void)
 {
